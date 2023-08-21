@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.bottonnav);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         loadFragment(new ExploreFragment());
-        getActionBar();
+
     }
 
     @Override

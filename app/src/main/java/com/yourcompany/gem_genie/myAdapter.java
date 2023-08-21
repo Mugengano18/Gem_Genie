@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class myAdapter extends RecyclerView.Adapter<myAdapter.holder> implements Filterable {
 
@@ -22,6 +23,11 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.holder> implements
     ArrayList<Model> data;
     Context context;
     ArrayList<Model> backup;
+
+    public void setFilteredList(ArrayList<Model> filteredList){
+        this.data = filteredList;
+        notifyDataSetChanged();
+    }
 
     public myAdapter(ArrayList<Model> data, Context context) {
         this.data = data;

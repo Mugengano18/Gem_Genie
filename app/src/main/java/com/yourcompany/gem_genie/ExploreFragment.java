@@ -39,22 +39,21 @@ public class  ExploreFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_explore, container, false);
 
-        // Initialize RecyclerView
         rcv = view.findViewById(R.id.rclview);
 
-        // Set up the Adapter with your dataqueue and application context
-        adapter = new myAdapter(dataqueue(), requireContext());
+
+        adapter = new myAdapter(data(), requireContext());
         rcv.setAdapter(adapter);
 
         // Set up the GridLayoutManager with 2 columns
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(), 2,GridLayoutManager.VERTICAL,false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(), 3,GridLayoutManager.VERTICAL,false);
         rcv.setLayoutManager(gridLayoutManager);
 
         return view;
 
     }
 
-    public ArrayList<Model> dataqueue()
+    public ArrayList<Model> data()
     {
         ArrayList<Model> holder=new ArrayList<>();
 
