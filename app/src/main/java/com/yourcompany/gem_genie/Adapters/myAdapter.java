@@ -1,4 +1,4 @@
-package com.yourcompany.gem_genie;
+package com.yourcompany.gem_genie.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,13 +9,15 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.yourcompany.gem_genie.Models.Model;
+import com.yourcompany.gem_genie.R;
+import com.yourcompany.gem_genie.Activities.SingleItemActivity;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class myAdapter extends RecyclerView.Adapter<myAdapter.holder> implements Filterable {
 
@@ -55,7 +57,7 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.holder> implements
 
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,SingleItemActivity.class);
+                Intent intent=new Intent(context, SingleItemActivity.class);
                 intent.putExtra("imagename",temp.getImgname());
                 intent.putExtra("header",temp.getHeader());
                 intent.putExtra("desc",temp.getDesc());

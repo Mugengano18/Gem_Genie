@@ -5,4 +5,7 @@
     <string name="button">Button</string>
     <string name="learn">Learn Fragment</string>
     <string name="profile">Profile Fragment</string>
+    <string name="learn1">You haven\'t enrolled in any course yet</string>
+    <string name="learn2">Start by enrolling in a course and learn something new</string>
+    <string name="explore_course">Explore Courses</string>
 </resources>

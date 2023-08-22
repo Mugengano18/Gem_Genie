@@ -1,10 +1,12 @@
-package com.yourcompany.gem_genie;
+package com.yourcompany.gem_genie.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.yourcompany.gem_genie.R;
 
 public class MainActivity extends AppCompatActivity {
 

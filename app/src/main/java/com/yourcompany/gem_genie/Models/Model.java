@@ -1,4 +1,4 @@
-package com.yourcompany.gem_genie;
+package com.yourcompany.gem_genie.Models;
 
 public class Model {
     private String header;

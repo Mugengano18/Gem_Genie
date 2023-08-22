@@ -1,4 +1,4 @@
-package com.yourcompany.gem_genie;
+package com.yourcompany.gem_genie.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.yourcompany.gem_genie.Fragments.ExploreFragment;
+import com.yourcompany.gem_genie.Fragments.LearnFragment;
+import com.yourcompany.gem_genie.Fragments.ProfileFragment;
+import com.yourcompany.gem_genie.Fragments.SearchFragment;
+import com.yourcompany.gem_genie.R;
 
 public class HomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 

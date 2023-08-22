@@ -1,4 +1,4 @@
-package com.yourcompany.gem_genie;
+package com.yourcompany.gem_genie.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.yourcompany.gem_genie.R;
 
 public class SingleItemActivity extends AppCompatActivity {
     ImageView img;
