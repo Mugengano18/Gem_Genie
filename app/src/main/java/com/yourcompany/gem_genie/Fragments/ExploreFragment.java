@@ -80,7 +80,7 @@ public class  ExploreFragment extends Fragment {
     }
     private void fetchCourseData() {
 
-        String url = "http://192.168.56.1:3000/courses";
+        String url = "http://192.168.56.1:4000/courses";
         ArrayList<CourseModel> courseModelArrayList = new ArrayList<>();
 
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
@@ -94,23 +94,23 @@ public class  ExploreFragment extends Fragment {
                         String header = jsonObject.getString("title");
                         String descr = jsonObject.getString("description");
                         String image = jsonObject.getString("course_image");
+                        String videoUrl = jsonObject.getString("course_material");
 
-                        CourseModel courseModel = new CourseModel(id, image, header, descr);
+                        CourseModel courseModel = new CourseModel(id, image, header, descr,videoUrl);
                         courseModelArrayList.add(courseModel);
                     }
 
-                    setupRecyclerView(courseModelArrayList); // Set up the RecyclerView here
+                    setupRecyclerView(courseModelArrayList);
 
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
 
-
+                Log.e(TAG,response.toString());
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(requireContext(), "Error", Toast.LENGTH_SHORT).show();
                 Log.e(TAG, "onErrorResponse: ", error);
             }
         });

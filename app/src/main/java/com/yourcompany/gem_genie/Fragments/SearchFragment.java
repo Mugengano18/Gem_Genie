@@ -167,13 +167,13 @@ public class SearchFragment extends Fragment {
         holder.add(ob8);
 
         Model ob9=new Model();
-        ob9.setHeader("Angular Programming");
+            ob9.setHeader("Angular Programming");
         ob9.setDesc("Web Programming");
         ob9.setImgname(R.drawable.angular);
         holder.add(ob9);
 
         Model ob10=new Model();
-        ob10.setHeader("Python Programming");
+            ob10.setHeader("Python Programming");
         ob10.setDesc("Desktop/Web based Progamming");
         ob10.setImgname(R.drawable.python);
         holder.add(ob10);

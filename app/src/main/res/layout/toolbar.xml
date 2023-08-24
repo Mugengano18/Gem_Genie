@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_icon"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_title"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/left_icon"
+            android:fontFamily="sans-serif-light"
+            android:text="Genie_Gem"
+            android:textColor="@color/white"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/right_icon"
+            android:src="@drawable/baseline_menu_24"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     <item
         android:title="Explore"
         android:id="@+id/explore"
-        android:icon="@drawable/baseline_explore_24"/>
+        android:icon="@drawable/baseline_explore_24" />
     <item
         android:title="Search"
         android:id="@+id/search_button"
@@ -13,8 +13,8 @@
         android:id="@+id/Library"
         android:icon="@drawable/baseline_local_library_24"/>
     <item
-        android:title="Profile"
+        android:title="More"
         android:id="@+id/profile"
-        android:icon="@drawable/baseline_account_circle_24"/>
+        android:icon="@drawable/baseline_view_headline_24"/>
 
 </menu>

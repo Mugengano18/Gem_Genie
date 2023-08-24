@@ -8,24 +8,24 @@
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout">
 
         <ImageView
             android:id="@+id/avatar"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="238dp"
-            android:layout_height="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="This is Header Text"
             android:textColor="#000"
@@ -38,8 +38,8 @@
 
         <TextView
             android:id="@+id/desc"
-            android:layout_width="235dp"
-            android:layout_height="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:text="This is Description Text"
